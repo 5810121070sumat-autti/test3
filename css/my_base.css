@@ -1,0 +1,451 @@
+@charset "UTF-8";
+@import url(font/thsarabunnew/thsarabunnew.css);
+@import url(normalize.css);
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-size: 100%;
+}
+
+body {
+	font-family: 'THSarabunNew', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px; /* 14px */
+	line-height: 1.7;
+	color: #333;
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 10px 0 10px 0;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 2.0em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1.0em;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #337ab7;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+	color: #23527c;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+hr {
+	padding: 15px 0;
+	border: none;
+}
+
+.title{
+color:#fff ;
+background-color:#009688;
+}
+
+.images {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #ccc; padding: 3px;
+}
+
+.bg-orange {
+  background-color: #76c604;
+  box-shadow: 0.1875em 0.1875em #f98f06;
+  padding: 0.3875em;
+  margin-bottom: 1em;
+  border-radius: 1.5125em;
+}
+.bg-orange:hover {
+  background-color: #f98f06;
+  box-shadow: 0.1875em  0.1875em   #fafd00;
+    border-radius: 2.5125em 0 2.5125em 0;
+
+}
+.hobbybg{
+
+position: relative;
+  border-radius: 0.3125em;
+  background-color: #fff;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+  margin-bottom: 1em;
+
+}
+/* Horizontal Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-menu {
+	display: inline-block;
+	width: 100%;
+}
+
+.my-menu li {
+	display: inline;
+}
+
+.my-menu li a,
+.my-menu li span {
+	display: inline-block;
+	margin-right: -4px;
+	padding: 14px 12px;
+	color: #fff;
+	text-decoration: none;
+	transition: 300ms ease-out;
+}
+
+.my-menu li a:hover,
+.my-menu li a:focus {
+	color: #ffffff;
+}
+
+.my-menu li.current a,
+.my-menu li.current span {
+	cursor: default;
+	color: #fff;
+}
+
+.my-menu li.disable a,
+.my-menu li.disable span {
+	cursor: not-allowed;
+	color: #777;
+}
+
+/* Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#cssmenu {
+  background: #f47402;
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  position: relative;
+}
+#cssmenu ul li a:hover {
+font-size:1.05em;
+  color: #fff;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #fff;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: red;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.error {
+	color: #a94442;
+}
+
+.success {
+	color: #3c763d;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+
+/* Grid
+<  768px width 100%
+>= 768px width 960px
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px 0 15px;
+}
+
+.row {
+	margin: 0 15px 0 15px;
+}
+
+.row1 {
+	margin: 7px 0 0 15px;
+}
+
+.container:after,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	width: 100%;
+	float: left;
+	padding: 0;
+}
+
+/* iPad 768 * 1024 */
+@media ( min-width : 768px ) {
+	.container {
+		width: 960px;
+	}
+	.col-1 {
+		width: 8.33333333%;
+	}
+	.col-2 {
+		width: 16.66666667%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33333333%;
+	}
+	.col-5 {
+		width: 41.66666667%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33333333%;
+	}
+	.col-8 {
+		width: 66.66666667%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33333333%;
+	}
+	.col-11 {
+		width: 91.66666667%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+   	.CSSTableGenerator {
+	margin:0px;padding:0px;
+	width:100%;
+	border:1px solid #ffffff;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.CSSTableGenerator tr:hover td{
+	
+}
+.CSSTableGenerator tr:nth-child(odd){ background-color:#feedc0; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff; }.CSSTableGenerator td{
+	vertical-align:middle;
+	border:1px solid #ffffff;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	color:#000000;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+		background:-o-linear-gradient(bottom, #f47402 5%, #f07d17 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f47402), color-stop(1, #f07d17) );
+	background:-moz-linear-gradient( center top, #ff0000 5%, #bf0000 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#f47402", endColorstr="#f07d17");	background: -o-linear-gradient(top,#f47402,f47402);
+
+	background-color:#f47402;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:0px 0px 1px 1px solid #ffffff;
+	color:#ffffff;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px solid #ffffff;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px solid #ffffff;
+}
